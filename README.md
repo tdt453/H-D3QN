@@ -18,6 +18,21 @@ The H-D3QN framework integrates a Dueling Double Deep Q-Network (D3QN) with Prio
 * `latency_analysis.py`: Profiling script to validate URLLC strict latency constraints.
 * `shap_analysis.py`: Explainable AI evaluation for feature importance.
 * `visualization.py` & `plot_tradeoff_analysis.py`: Scripts for generating publication-ready IEEE-style figures.
+  ### Dataset Description
+
+The datasets used in this repository are divided into three scenarios: Sigfox, LoRaWAN, and Indoor. 
+
+| Dataset | File Name | Description |
+| :--- | :--- | :--- |
+| **Indoor** | `indoor_raw_rssi.ods` | Raw RSSI measurements collected in the indoor environment. |
+| | `indoor_pos_coords.txt` | Coordinates for the indoor positions. |
+| | `semantic_features_indoor_ods.csv` | Extracted semantic features for the indoor dataset. |
+| **Sigfox** | `sigfox_dataset_antwerp.csv` | Original Sigfox dataset collected in Antwerp. |
+| | `sigfox_bs_mapping.csv` | Base station mapping details for the Sigfox network. |
+| | `semantic_features_antwerp.csv` | Extracted semantic features for the Sigfox dataset. |
+| **LoRaWAN**| `sensors_data.csv` | Raw sensory and transmission data from LoRaWAN nodes. |
+| | `nodes_coordinates.txt` | Geographical coordinates and distance to gateway for LoRaWAN nodes. |
+| | `semantic_features_lorawan.csv` | Extracted semantic features for the LoRaWAN dataset. |
 
 ## Requirements
 Ensure you have Python 3.8+ installed. Install all required dependencies by running:
